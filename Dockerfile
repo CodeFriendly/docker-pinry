@@ -22,7 +22,7 @@ run    apt-get --yes build-dep python-imaging
 run    npm install -g bower
 run    mkdir -p /srv/www/; cd /srv/www/; git clone https://github.com/pinry/pinry.git
 run    mkdir /srv/www/pinry/logs; mkdir /srv/www/pinry/uwsgi; mkdir /data
-run    cd /srv/www/pinry; bower --allow-root install
+# run    cd /srv/www/pinry; bower --allow-root install
 run    cd /srv/www/pinry; virtualenv .; bin/pip install -r requirements.txt; chown -R www-data:www-data .
 
 
